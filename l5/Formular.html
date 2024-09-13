@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>First subject</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Review</h1>
+        <p id="description">Vă rugăm să completați acest formular cu informațiile necesare</p>
+        <form action="https://student.upt.ro" id="survey-form">
+            <fieldset>
+            <label for="name" id="name-label">Nume Prenume: <input type="text" name="Name" id="name" required=""placeholder="Ex: Popescu Iulian"></label>
+           <label for="email" id="email-label">Email: <input type="email" name="Email" id="email" required=""placeholder="sfasd@yahoo.com"></label>
+            <label for="number" id="number-label">Telefon: <input type="number" name="Number" id="number" required="" min="0" max="99999999999"placeholder="Nr tel"></label>
+            </fieldset>
+            <fieldset>
+                <label for="">În ce an de facultate te afli acum?
+                 <select name="" id="dropdown">
+                <option value="a">1</option>
+                <option value="b">2</option>
+                <option value="c">3</option>
+                <option value="d">4</option>
+            </select>
+        </label>
+            </fieldset>
+           <fieldset>
+            <legend>Ați întâmpinat dificultăți pe parcursul acestui an?</legend>
+            <label for="Da" class="inline"><input type="radio" id="Da" name="account-type" checked="" value="Da"class="inline">Da</label>
+            <label for="Nu" class="inline"></label><input type="radio" id="Nu" name="account-type"value="Nu"class="inline">Nu</label>
+            <label for="Other"class="inline"></label><input type="radio" id="Other"  name="account-type"value="Other"class="inline">Doresc sa nu raspund la aceasta intrebare</label>
+
+           </fieldset>
+           <fieldset>
+            <legend>Care sunt materiile la care ati intampinat probleme pe parcursul anului?</legend>
+           <label for="Analiza matematica"class="online"><input type="checkbox" id="Analiza matematica" value="1"class="online">Analiza matematica</label>
+           <label for="Programarea Calculatoarelor"class="online"><input type="checkbox" id="Programarea Calculatoarelor" value="2"class="online">Programarea Calculatoarelor</label>
+           <label for="Algebra si Geometrie"class="online"></label> <input type="checkbox" id="Algebra si Geometrie" value="3"class="online">Algebra si Geometrie</label>
+           <label for="Logică şi structuri discrete"class="online"><input type="checkbox" value="4" id="Logică şi structuri discrete" class="online">Logică şi structuri discrete</label>
+            <label for="Fundamente de inginerie mecanică şi robotică"class="online"><input type="checkbox"value="5" id="Fundamente de inginerie mecanică şi robotică" class="online">Fundamente de inginerie mecanică şi robotică</label>
+            <label for="Fizică"class="online"><input type="checkbox" value="6" id="Fizică" class="online">Fizică</label>
+           </fieldset>
+           <fieldset>
+           <legend>Daca aveti anumite observatii despre materiile de mai sus, va rugam sa le lasati mai jos</legend>
+          <label for="Comm"><textarea name="Comm" id="Comms" rows="5" cols="30" placeholder="Aici puteti lasa observatii" ></textarea></label>
+          </fieldset>
+          <label for="terms"class="inline"> <input type="checkbox" class="inline" id="terms" required="" name="Terms" class="inline" value="Yep">Accept <a href="https://www.aut.upt.ro/rebus.php" target="_blank">termenii si conditiile</a> </label>
+          <input type="submit" name="submit" id="submit" value="Finalizeaza">
+          
+        </form>
+    </body>
+</html>
