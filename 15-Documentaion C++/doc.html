@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport", content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>C++ Documentation</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>C++ Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Syntax_and_Structure">Syntax and Structure</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Data_Types">Data Types</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Control_Structures">Control Structures</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Libraries_and_Standard_Template_Library">Libraries and Standard Template Library</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>C++ is an object-oriented programming (OOP) language that is viewed by many as the best language for creating large-scale applications. C++ is a superset of the C language.</p>
+                    <p>C++ allows software developers to define their own data types and manipulate them using functions and methods. It also allows low-level programming and provides access to memory, enabling fast and efficient execution of code. It also supports generic programming using templates, which let code be written in a generic form and reused for different data types.</p> 
+                    <ul>
+                        <li>C++ is used in fields such as system software, game development, embedded systems, scientific computing and high-performance applications</li>
+                        <li>C++ can run on many platforms, including Linux, Mac and Windows</li>
+                    </ul>
+                    <code>
+                        int main()
+                        {
+                            <br>
+                            cout << "Hello world";
+                            <br>
+                            return 0;
+                        }</code>
+                </article>
+            </section>
+            <section class="main-section" id="Syntax_and_Structure">
+                <header>Syntax and Structure</header>
+                <article>
+                    <p></p>In C++, variables are used to store data that can be manipulated during the execution of the program. Each variable must have a specific data type, which determines what kind of values it can hold. The most common data types include int for integers, double for floating-point numbers, and char for characters. Declaring a variable in C++ is done by specifying the data type followed by the variable name.</p>
+                    <p>Variables can be initialized at the time of declaration or later in the code. It is also possible to use expressions to calculate values based on other variables. C++ provides a clear syntax for managing variables, making programming easier and improving code readability.</p>
+                    <ul>
+                        <li><span>Key Point 1:</span> Variables must be declared before they can be used in a program.</li>
+                        <li><span>Key Point 2:</span> The data type of a variable determines the amount of memory allocated and the operations that can be performed on it.</li>
+                    </ul>
+                    <code>int main()
+                        <br>{
+                            int age = 25;
+                            <br>
+                            double salary = 500.50;
+                            <br>
+                            char grade = 'A';
+                            <br>
+                            cout << "Age: " << age << endl;
+                            <br>
+                            cout << "Salary: " << salary << endl;<br>
+                            cout << "Grade: " << grade << endl;<br>
+                            return 0;<br>
+                        }</code>
+                </article>
+            </section>
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <article>
+                    <p>In C++, data types define the kind of data that can be stored and manipulated within a program. The most common data types include int for integers, double for floating-point numbers, char for characters, and bool for boolean values (true or false). Each data type has a specific size in memory and determines the operations that can be performed on the variable. Understanding data types is crucial for efficient memory usage and ensuring that operations on the data yield the expected results.</p>
+                    <p>C++ also allows for the creation of user-defined data types using structures (struct), classes, and enumerations (enum). This feature enhances the language's flexibility, enabling developers to create complex data structures tailored to their needs. By using these user-defined types, programmers can represent real-world entities more accurately and create more organized and manageable code.</p>
+                    <ul>
+                        <li><span>Key Point 1:</span> C++ has several built-in data types, including integers, floating-point numbers, characters, and booleans.</li>
+                        <li><span>Key Point 2:</span> User-defined data types can be created using structures, classes, and enumerations to model complex data.</li>
+                    </ul>
+                    <code>int main()<br>
+                        {
+                            int age = 30;<br>
+                            double height = 5.9;<br>
+                            char initial = 'J';<br>
+                            bool isStudent = true;<br>
+                            cout << "Age: " << age << endl;<br>
+                            cout << "Height: " << height << " feet" << endl;<br>
+                            cout << "Initial: " << initial << endl;<br>
+                            cout << "Is Student: " << (isStudent ? "Yes" : "No") << endl;<br>
+                            return 0;<br>
+                        }</code>
+                </article>
+            </section>
+            <section class="main-section" id="Control_Structures">
+                <header>Control Structures</header>
+                <article>
+                    <p>Control structures are essential in C++ for controlling the flow of a program. These structures allow the program to make decisions and execute different parts of the code based on specific conditions.</p>
+                    <p><span>Conditional Statements: </span>C++ supports if, else if, and else statements to evaluate conditions <span>Looping Structures: </span>for, while, and do-while loops allow repeated execution of code blocks.</p>
+                    <ul></ul>
+                        <li><span>Key Point 1:</span> if-else is used for binary decisions or more complex condition checks.
+                            switch is preferred when multiple specific values need to be checked, improving readability.</li>
+                        <li><span>Key Point 2:</span> for loops are best when iteration counts are predetermined.
+                            while and do-while loops continue as long as a condition remains true, but do-while ensures the loop runs at least once.</li>
+                    </ul>
+                    <code>int main() { <br>
+                        int num = 10;<br>
+                        if (num > 0)<br> {   <br>
+                            cout << "Positive number\n";<br>
+                            } else
+                        <br> {   <br>
+                            cout << "Non-positive number\n";<br>
+                        }   <br>
+                        for (int i = 1; i <= 5; i++)<br> {   <br>
+                            cout << "Iteration " << i << "\n";<br>
+                        }
+                        <br>
+                        return 0;   <br>
+                    }</code>
+                </article>
+            </section>
+            <section class="main-section" id="Object_Oriented_Programming">
+                <header>Object Oriented Programming</header>
+                <article>
+                    <p>Object-Oriented Programming (OOP) is a paradigm that organizes software design around data, or objects, rather than functions and logic. C++ supports OOP, which allows you to model real-world entities as objects in code, enhancing modularity, reusability, and maintainability.</p>
+                    <p><span>Classes and Objects:</span></p>
+                    <ul>
+                        <li>A class is a blueprint for creating objects. It defines properties (data members) and methods (functions) that an object can have.</li>
+                        <li>An object is an instance of a class, representing an entity in the real world or a specific concept in the code.</li>
+                    </ul>
+                    <code>class Car {<br>
+                        public:<br>
+                            string brand;<br>
+                        
+                            void displayBrand() {<br>
+                                cout << "The car brand is: " << brand << endl;<br>
+                            }<br>
+                        };</code>
+                </article>
+            </section>
+            <section class="main-section" id="Libraries_and_Standard_Template_Library">
+                <header>Libraries and Standard Template Library</header>
+                <article>
+                    <p>In C++, libraries are collections of pre-written code that provide functionality for common tasks. The Standard Template Library (STL) is a powerful part of the C++ Standard Library that provides ready-to-use classes and functions for data structures and algorithms.</p>
+                    <p><span>Standard Library and STL (Standard Template Library):</span></p>
+                    <ul>
+                        <li>Commonly used libraries include "iostream" for input/output operations, "cmath" for mathematical functions, and "string" for string manipulation.</li>
+                        <li>Containers: Data structures like vector, list, map, and set that store and manage collections of objects.</li>
+                    </ul>
+                    <code>int main() { <br>
+                        vector<int> numbers = {5, 3, 9, 1, 6};<br>
+                        sort(numbers.begin(), numbers.end());<br>
+                    
+                        // Display sorted numbers
+                        for (int num : numbers) {<br>
+                            cout << num << " ";<br>
+                        }<br>
+                        cout << endl;<br>
+                    
+                        return 0;<br>
+                    }</code>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
