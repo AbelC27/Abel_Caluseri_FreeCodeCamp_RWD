@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <img src="photos and video/logo.jpg" alt="bike photo" id="header-img">
+        <h1 id="title">Bicycle shop</h1>
+         <nav id="nav-bar">
+            <ul>
+                <li><a href="#Login" class="nav-link">Login</a></li>
+                <li><a href="#Features"  class="nav-link">Features</a></li>
+                <li><a href="#Price" class="nav-link">Price</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <div class="form-div" id="Login">
+        <p id="form-info">Please fill out this form with required information</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" >
+        <fieldset>
+            <label for="first-name">Enter your First Name:<br> <input type="text" name="Text1" id="first-name" required></label> <br>
+            <label for="second-name">Enter your Second Name:<br> <input type="text" name="Text2" id="second-name" required></label> <br>
+            <label for="email">Enter your Email: <br> <input type="email" name="email" id="email" required placeholder="Please fill it with your email"></label> <br>
+            <label for="phone-number">Enter your Phone Number:<br> <input type="number" id="phone-number" name="phone-number" required min="0" ></label> <br>
+        </fieldset>
+       <label for="submit"><input class="button"  type="submit" id="submit" name="Get started" value="Get started"></label>
+    </form>
+</div>
+<div class="video" id="Features">
+<iframe id="video" src="photos and video/cycling_video.mp4?autoplay=0" frameborder="0" width="800" height="450" ></iframe>
+</div>
+
+
+<div class="grid-container" id="Price">
+    <div class="bike">
+        <h3>Electric Bike</h3>
+        <p>Price: 400$</p>
+        <ul>
+            <li>Efficient, eco-friendly transportation</li>
+            <li>Requires less physical effort.</li>
+            <li>Great for urban commuting.</li>
+        </ul>
+    </div>
+    <div class="bike">
+        <h3>Mountain Bike</h3>
+        <p>Price: 500$</p>
+        <ul>
+            <li>Built for rugged terrains.</li>
+            <li>Durable and sturdy design.</li>
+            <li>Ideal for off-road trails.</li>
+        </ul>
+    </div>
+    <div class="bike">
+        <h3>Classic Bike</h3>
+        <p>Price: 200$</p>
+        <ul>
+            <li>Simple, human-powered vehicle.</li>
+            <li>Low-maintenance, affordable ride.</li>
+            <li>Perfect for casual cycling.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
