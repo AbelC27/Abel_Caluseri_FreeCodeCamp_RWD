@@ -1,0 +1,228 @@
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  :root{
+    --back_col1:rgb(2, 2, 44);
+    --back_col2:rgb(67, 67, 198);
+    --back_color:rgb(16, 16, 55);
+    --back_col3:rgb(41, 1, 73);
+    --bac_col4:rgb(41, 2, 86);
+    --bac_col5:rgb(3, 54, 104);
+  }
+  body {
+      font-family: Arial, sans-serif;
+    background: linear-gradient(var(--back_color));
+      min-height: 100vh;
+
+    }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+    background-color: black;
+  }
+  #navbar{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 100; 
+  }
+  .nav_link{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+  .nav_link > li{
+    list-style-type: none;
+  }
+  .nav_link> li> a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+  .nav_link> li> a:hover{
+    background-color: rgb(2, 6, 80);
+    border-radius: 5%;
+  }
+  .welcome-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background:linear-gradient(var(--back_col1),var(--back_col2));
+  }
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .welcome-section >p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+  }
+  .about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: left;
+    background:linear-gradient(var(--back_col1), var(--back_col3));
+  }
+  .me_photo{
+    border-radius: 100%;
+  }
+  .description{
+    height: 100%;
+    width: 100%;
+    border-radius: 75%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+  } 
+  .description >h2{
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: gold;
+  }
+  .projects{
+    width: 100%;
+    background:linear-gradient(var( --back_col3),var(--bac_col4));
+    display: grid;
+    grid-template-rows:repeat(2,1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .projects > h2{
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(80, 200, 120);
+  }
+  .project-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10%;
+  }
+  .img-project{
+    width: 100%;
+    height: auto;
+  }
+  .project-title{
+    background-color: aquamarine;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 30px;
+  }
+  .contact{
+    background:linear-gradient(var(--bac_col4), var(--bac_col5));
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+  }
+  .contact-header{
+    text-align: center;
+    gap: 2rem;
+  }
+  .contact-header >h2{
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(80, 200, 120);
+    gap: 2rem;
+  }
+  .contact-header >p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(4, 118, 174);
+    gap: 2rem;
+  }
+  .social-icons{
+    display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+.social-icons a {
+  text-decoration: none;
+  color: rgb(226, 125, 125);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-icons img {
+  transition: transform 0.3s ease; 
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+  .nav_link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav_link li {
+    margin: 10px 0;
+  }
+
+
+  .me_photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects .project-tile {
+    display: block; 
+    text-align: center;
+  }
+
+  .img-project {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons a {
+    margin: 10px 0;
+  }
+} 
